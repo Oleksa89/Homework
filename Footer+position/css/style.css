@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+.squares{
+    position: relative;
+    height: 87vh;
+    border-bottom: 1px solid black;
+}
+.squares>div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    line-height: 100px;
+}
+.squares div:first-child{
+    bottom: 0;
+    right: 0;
+}
+.squares div:nth-child(2){
+    left:  0;
+    bottom: 0;
+}
+.squares div:nth-child(3){
+    top: 0;
+    left: 0;
+}
+.squares div:nth-child(4){
+    top: 0;
+    right: 0;
+}
+.squares div:nth-child(5){
+    top: calc(50vh - 50px);
+    left: calc(50vw - 50px);
+}
+.squares div:first-child:hover{
+    bottom: 0px;
+    right: 200px;
+}
+.squares div:nth-child(2):hover{
+    left:  200px;
+    bottom: 200px;
+}
+.squares div:nth-child(3):hover{
+    top: 0px;
+    left: 200px;
+}
+.squares div:nth-child(4):hover{
+    top: 0px;
+    right: 200px;
+}
+.squares div:nth-child(5):hover{
+    top: calc(25vh - 25px);
+    left: calc(50vw - 50px);
+}
+
+
+.footer{
+    height: 100px;
+    position: sticky;
+    bottom: 0px;
+    background-color: blue;
+    text-align: center;
+ 
+}
+.footer>a{
+    line-height: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+
+}
