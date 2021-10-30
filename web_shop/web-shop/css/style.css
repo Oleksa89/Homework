@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&family=Zen+Kurenaido&display=swap');
+@font-face{
+    font-family: "Comfortaa";
+    src: url(../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+    font-stretch: normal;
+    font-weight: normal;
+}
+body{
+    background:linear-gradient(rgb(53, 51, 51),rgb(165, 156, 156));
+    font-family: 'Comfortaa';
+    /* font-family: 'Zen Kurenaido', sans-serif; */
+}
+.main{
+    position: relative;
+}
+header{
+    text-align: center;
+}
+h1,h2{
+    text-shadow: 1px 1px 6px  rgb(157, 151, 151);
+
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product{
+    width: 300px;
+    margin: 20px 0;
+    border: 2px solid rgb(157, 151, 151);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.product:hover{
+    box-shadow: 10px 10px 5px gray;
+
+}
+.text_product{
+    height: 40%;
+    position: relative;
+    z-index: 2;
+}
+.text_product_head{
+    font-weight: bold;
+}
+.product:first-child .text_product::before{
+    content: "-20%";
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    padding: 7px;
+    transform: rotate(-25deg);
+    z-index: 3;
+}
+.product:nth-child(2) .text_product::before{
+    content: "-0.04%";
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    padding: 7px;
+    transform: rotate(-25deg);
+    z-index: 3;
+}
+.product:nth-child(3) .text_product::before{
+    content: "HOT";
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    padding: 7px;
+    transform: rotate(-25deg);
+    z-index: 3;
+}
+.product:nth-child(4) .text_product::before{
+    content: "FREE";
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    padding: 7px;
+    transform: rotate(-25deg);
+    z-index: 3;
+}
+
+
+
+.product:nth-child(5) .text_product:before{
+    content: "SUPER-HOT";
+    position: absolute;
+    top: -9px;
+    left: -30px;
+    color: white;
+    background-color: red;
+    font-size: 18px;
+    padding: 7px;
+    transform: rotate(-25deg);
+    z-index: 3;
+}
+
+
+
+.photo_product>img{
+    max-width: 100%;
+    display: inline-block;
+}
+.price_product{
+    text-align: end;
+}
+.old-price{
+    text-decoration: line-through;
+    color: grey;
+}
+.new-price{
+    font-size: 20px;
+    font-weight: 900;
+}
+.product>button{
+    background-color: red;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+}
+.product>button>a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+footer{
+    height: 25px;
+    background: gray;
+    text-align: center;
+
+}
