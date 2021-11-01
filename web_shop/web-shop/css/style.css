@@ -29,7 +29,7 @@ h1,h2{
     flex-wrap: wrap;
 }
 .product{
-    width: 300px;
+    width: 20vw;
     margin: 20px 5px;
     border: 2px solid rgb(157, 151, 151);
     border-radius: 10%;
