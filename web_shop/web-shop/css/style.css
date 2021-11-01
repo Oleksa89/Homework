@@ -25,12 +25,12 @@ h1,h2{
     margin: 0 auto;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 .product{
     width: 300px;
-    margin: 20px 0;
+    margin: 20px 5px;
     border: 2px solid rgb(157, 151, 151);
     border-radius: 10%;
     display: flex;
