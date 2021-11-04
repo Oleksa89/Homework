@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-container__item">
+            <div class="top-square"></div>
+            <div class="bottom-square"></div>
+        </div>
+        <div class="flex-container__item">
+            <div class="top-square"></div>
+            <div class="bottom-square"></div>
+
+        </div>
+        <div class="flex-container__item">
+            <div class="top-square"></div>
+            <div class="bottom-square"></div>
+
+        </div>
+        <div class="flex-container__item">
+            <div class="top-square"></div>
+            <div class="bottom-square"></div>
+        </div>
+    </div>
+    <form class="docs-form" action="newform" method="POST">
+        <ul class="user-data">
+            <li>
+                <label for="name">Введіть ім'я</label>
+                <input class="user-data__name" type="text" id="name" name="user_name" >
+            </li>
+            <li>
+                <label class="user-data__surname" for="surname">Введіть прізвище</label>
+                <input type="text" id="name" name="user_surname" >
+
+            </li>
+            <li>
+                <label class="user-data__email" for="email">Введіть електронну пошту</label>
+                <input type="email" name="email" id="user_email">
+            </li>
+            <li>
+                <label for="birth">Дата народження</label>
+                <input class="user-data__birth" type="date" name="birth" id="user_birth">
+            </li>
+            <li>
+                <label for="sex">Ваша стать</label>
+            <input class="user-data__sex_male" type="checkbox" name="sex" id=""> Чоловіча
+            <input class="user-data__sex_female" type="checkbox" name="sex" id=""> Жіноча
+        </li>
+        <li>
+            <label for="user-photo">Завантажте фото</label>
+            <input type="file" name="user-photo" id="user-photo">
+        </li>
+
+        </ul>
+        <button class="user-data__button">Відправити</button>
+
+    </form>
+</body>
+</html>
