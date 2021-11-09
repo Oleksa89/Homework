@@ -98,11 +98,15 @@
 
       }
 }
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 
 
 //     // animation: change-place 1.5s linear 0.5s infinite forwards;
    
 .main-watch{
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
     position: relative;
     z-index: 3;
     width: 400px;
@@ -167,7 +171,7 @@
 .watch{
     width: 200px;
     height: 200px;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 50%;
     position: relative;
     top: 150px;
@@ -176,12 +180,12 @@
 .watch__hours:nth-child(1){
     position: absolute;
     top: 10px;
-    left: 100px;
+    left: 90px;
 }
 .watch__hours:nth-child(2){
     position: absolute;
-    top: 100px;
-    right: 0;
+    top: 90px;
+    right: 10px;
 }
 .watch__hours:nth-child(3){
     position: absolute;
@@ -190,8 +194,8 @@
 }
 .watch__hours:nth-child(4){
     position: absolute;
-    top: 100px;
-    left: 0;
+    top: 90px;
+    left: 10px;
 }
 .watch {
 
@@ -258,16 +262,146 @@
     transform-origin: 0px 0px;
     animation: pendulum 3s steps(2,end) infinite ;
 }
-@keyframes colors {
+@keyframes color-red {
+    0% {
+        opacity: 0;
 
-  
+    }
+    10% {
+        opacity: 0;
+
+    }
+    20% {
+        opacity: 0;
+
+    }
+    30% {
+        opacity: 0;
+
+    }
+    40% {
+        opacity: 0;
+
+    }
+    50% {
+        opacity: 0;
+
+    }
+    60% {
+        opacity: 0;
+
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes color-yellow {
+    0% {
+        opacity: 0;
+
+    }
+    10% {
+        opacity: 0;
+
+    }
+    20% {
+        opacity: 0;
+
+    }
+    30% {
+        opacity: 0;
+
+    }
+    40% {
+        opacity: 0;
+
+    }
+    50% {
+        opacity: 0;
+
+    }
+    60% {
+        opacity: 1;
+
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+@keyframes color-green {
+    0% {
+        opacity: 1;
+
+    }
+    10% {
+        opacity: 1;
+
+    }
+    20% {
+        opacity: 0;
+
+    }
+    30% {
+        opacity: 1;
+
+    }
+    40% {
+        opacity: 0;
+
+    }
+    50% {
+        opacity: 1;
+
+    }
+    60% {
+        opacity: 0;
+
+    }
+    70% {
+        opacity: 0;
+
+    }
+    80% {
+        opacity: 0;
+
+    }
+    90% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 0;
+
+    }
 }
 
 .container {
     margin: 0 auto;
     width: 200px;
-    height: 300px;
+    height: 305px;
     border: 1px solid black;
+    background: #070404;
 
     &__item {
         margin: 0 auto;
@@ -276,8 +410,19 @@
         border-radius: 50%;
         border: 1px solid black;
     }
-    &__item::nth-child(1){
+    &__item:nth-child(1){
         background: red;
-        animation: colors 10s linear 0.5s;
+        animation: color-red 15s ease-in infinite;
+        // animation: colors 10s linear 0.5s;
+    }
+    &__item:nth-child(2){
+        background: yellow;
+        animation: color-yellow 15s ease-in infinite;
+
+    }
+    &__item:nth-child(3){
+        background: green;
+        animation: color-green 15s ease-in infinite;
+
     }
 }

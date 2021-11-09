@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
 @-webkit-keyframes change-place {
   0% {
     top: 0;
@@ -209,6 +210,9 @@
 }
 
 .main-watch {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
   position: relative;
   z-index: 3;
   width: 400px;
@@ -277,7 +281,7 @@
 .watch {
   width: 200px;
   height: 200px;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 50%;
   position: relative;
   top: 150px;
@@ -287,13 +291,13 @@
 .watch__hours:nth-child(1) {
   position: absolute;
   top: 10px;
-  left: 100px;
+  left: 90px;
 }
 
 .watch__hours:nth-child(2) {
   position: absolute;
-  top: 100px;
-  right: 0;
+  top: 90px;
+  right: 10px;
 }
 
 .watch__hours:nth-child(3) {
@@ -304,8 +308,8 @@
 
 .watch__hours:nth-child(4) {
   position: absolute;
-  top: 100px;
-  left: 0;
+  top: 90px;
+  left: 10px;
 }
 
 .watch__arrows {
@@ -373,13 +377,228 @@
           animation: pendulum 3s steps(2, end) infinite;
 }
 
-@-webkit-keyframes colors {}
+@-webkit-keyframes color-red {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
-@keyframes colors {}.container {
+@keyframes color-red {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes color-yellow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes color-yellow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes color-green {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes color-green {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.container {
   margin: 0 auto;
   width: 200px;
-  height: 300px;
+  height: 305px;
   border: 1px solid black;
+  background: #070404;
 }
 
 .container__item {
@@ -390,9 +609,21 @@
   border: 1px solid black;
 }
 
-.container__item::nth-child(1) {
+.container__item:nth-child(1) {
   background: red;
-  -webkit-animation: colors 10s linear 0.5s;
-          animation: colors 10s linear 0.5s;
+  -webkit-animation: color-red 15s ease-in infinite;
+          animation: color-red 15s ease-in infinite;
+}
+
+.container__item:nth-child(2) {
+  background: yellow;
+  -webkit-animation: color-yellow 15s ease-in infinite;
+          animation: color-yellow 15s ease-in infinite;
+}
+
+.container__item:nth-child(3) {
+  background: green;
+  -webkit-animation: color-green 15s ease-in infinite;
+          animation: color-green 15s ease-in infinite;
 }
 /*# sourceMappingURL=style.css.map */
