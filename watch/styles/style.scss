@@ -232,11 +232,12 @@
 
     }
 }
-
+// fonts
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 
 .wrapper{
     display: flex;
+    justify-content: space-evenly;
     margin: 25px;
 }
    
@@ -254,6 +255,9 @@
     background-color: #a36700;
     background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.kuku-watch{
+    
 }
 .kuku{
     position: absolute;
@@ -317,23 +321,114 @@
 .watch__hours:nth-child(1){
     position: absolute;
     top: 10px;
-    left: 90px;
+    left: 90px;    
 }
+.watch__hours:nth-child(1)::after{
+        position: absolute;
+        content: '';
+        top: 5px;
+        right: -40px;
+        width: 3px;
+        height: 30px;
+        background: black;
+        transform: rotate(35deg);
+    
+}
+.watch__hours:nth-child(1)::before{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -40px;
+    width: 3px;
+    height: 30px;
+    background: black;
+    transform: rotate(-35deg);
+
+}
+
 .watch__hours:nth-child(2){
     position: absolute;
     top: 90px;
     right: 10px;
 }
+.watch__hours:nth-child(2)::before{
+    position: absolute;
+    content: '';
+    top: -34px;
+    left: 1px;
+    width: 3px;
+    height: 30px;
+    background: black;
+    transform: rotate(-115deg);
+}
+.watch__hours:nth-child(2)::after{
+    position: absolute;
+    content: '';
+    top: 39px;
+    right: 12px;
+    width: 3px;
+    height: 30px;
+    background: black;
+    transform: rotate(-60deg);
+
+}
+
 .watch__hours:nth-child(3){
     position: absolute;
     bottom: 10px;
     left: 100px;
+}
+.watch__hours:nth-child(3)::before{
+    position: absolute;
+    content: '';
+    top: 6px;
+    right: -35px;
+    width: 3px;
+    height: 30px;
+    background: black;
+    transform: rotate(-35deg);
+
+
+}
+.watch__hours:nth-child(3)::after{
+    position: absolute;
+    content: '';
+    top: 12px;
+    right: 40px;
+    width: 3px;
+    height: 30px;
+    background: black;
+    transform: rotate(26deg);
+
+
 }
 .watch__hours:nth-child(4){
     position: absolute;
     top: 90px;
     left: 10px;
 }
+.watch__hours:nth-child(4)::before{
+    position: absolute;
+    content: '';
+    top: -34px;
+    left: 6px;
+    width: 3px;
+    height: 30px;
+    background: black;
+    transform: rotate(115deg);
+}
+.watch__hours:nth-child(4)::after{
+    position: absolute;
+    content: '';
+    top: 40px;
+    right: -6px;
+    width: 3px;
+    height: 30px;
+    background: black;
+    transform: rotate(60deg);
+
+}
+
 .watch {
 
     &__arrows {
@@ -347,7 +442,7 @@
             position: absolute;
             top: 100px;
             left: 100px;
-            animation: minute 360s steps(12,end) infinite forwards;
+            animation: minute 3600s steps(60,end) infinite forwards;
             transform-origin: 0px 0px;
 
 
@@ -371,6 +466,7 @@
 }
 .pendulum{
     position: relative;
+    
 }
 .pendulum::after{
     content: '';
@@ -402,7 +498,7 @@
 
 .container {
     position: relative;
-    margin: 0 auto;
+    // margin: 0 auto;
     margin-top: 60px;
     width: 200px;
     height: 315px;
@@ -428,17 +524,17 @@
     }
     &__item:nth-child(1){
         background: red;
-        animation: color-red 15s ease-in infinite;
+        animation: color-red 20s ease-in infinite;
         // animation: colors 10s linear 0.5s;
     }
     &__item:nth-child(2){
         background: yellow;
-        animation: color-yellow 15s ease-in infinite;
+        animation: color-yellow 20s ease-in infinite;
 
     }
     &__item:nth-child(3){
         background: green;
-        animation: color-green 15s ease-in infinite;
+        animation: color-green 20s ease-in infinite;
 
     }
 }
